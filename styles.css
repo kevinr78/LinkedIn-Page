@@ -231,7 +231,7 @@ width: 500px;
 	}
 
 	.nav-link-container{
-		/*border:2px solid yellow;*/
+	
 		position: relative;
 		right: 65px;
 	}
@@ -273,7 +273,7 @@ width: 500px;
 	display: flex;
 	width:100%;
 	height: 1500px;
-	margin: auto;
+	
 	padding-left: 50px;
 
 
@@ -329,12 +329,13 @@ width: 500px;
 	}
 	.Profile-news{
 		padding-top: 50px;
+		margin:0 auto;
 	}
 	.nav-link-container{
 		position: relative;
 		right: 20px;
 		margin:5px  10px ;
-	/*	border:2px solid green;*/
+	
 		width: 60px;
 	}
 	.work{
@@ -345,9 +346,10 @@ width: 500px;
 		font-size: 110%;
 	}
 	.Follow-Link{
-		position: relative;
-		bottom: 25px;
-		right: 70px;
+		position:absolute;
+		top: 30px;
+		
+		
 	}
 
 
@@ -371,7 +373,8 @@ width: 500px;
 		position: absolute;
 		top: 30px;
 	}
-	.content-img{width: 380px}
+	.content-img{width: 380px;
+		margin-left: 8px}
 	#search-input{
 		display: flex;
 		border-radius: 2px;
@@ -402,14 +405,14 @@ width: 500px;
 	.content-container{
 	
 		width:100%;
-		margin-left: 0;
+		overflow-x: hidden;
 		
 	}
 	#User-Post{
 		width:300px;
 	}
 	.Profile-news{
-		width: 580px;
+		width: 500px;
 		height: auto;
 	}
 	.User-profile , .News,.nav-link-container p {display: none;}
