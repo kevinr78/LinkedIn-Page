@@ -1,0 +1,423 @@
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Roboto Slab', serif;
+}
+/*Navigation bar*/
+nav ,.hidden{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #283E4A;
+	min-height: 5vh;
+
+}
+.hidden{
+	display: none;
+}
+
+#LinkedInLogo{
+	
+	width: 40px;
+	height: 40px;
+	margin:10px;
+}
+.nav-links{
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+
+}
+.nav-links li ,.nav-links a{
+	text-align: center;
+	width: 85px;
+	list-style: none;
+	color: white;
+	text-decoration: none;
+}
+.nav-link-container i{
+	margin-bottom:10px; 
+}
+
+.nav-link-container{
+	
+	padding-top: 12px;
+}
+
+/*Search-Bar*/
+#search-input{
+	position: relative;
+	bottom: 25px;
+	width: 250px;
+	height: 30px;
+	outline: none;
+	border:none;
+	border-radius: 2px;
+}
+.Logo i{
+	position: relative;
+	bottom: 26px;
+	left: 5px;
+	background-color: #E1E9EE;
+	height: 31px;
+	width: 30px;
+	padding: 5px;
+}
+#User-profile-img{
+	width:	28px;
+	height: 28px;
+	border-radius: 50%;
+	
+}
+/*Nav-link icons*/
+.icon{
+	
+	font-size: 120%;
+}
+
+/*Main container*/
+.content-container{
+	display: flex;
+	width:1200px;
+	height: 1300px;
+	margin: 0 auto;
+	background-color:#F5F5F5;
+	padding: 20px;
+}
+/*users profiles*/
+.User-profile{
+	margin: 0px 10px 10px 10px;
+	display: inline-flex;
+	width: 225px;
+	height: 400px;
+	background-color:white;
+}
+.Profile-news{
+	
+	display: inline-flex;
+	width: 650px;
+	height: 1000px;
+	background-color: #F5F5F5;
+}
+.profile-img{
+	border-right: 2px solid grey;
+}
+.News{
+	
+	float: right;
+	margin: 10px;
+	display: inline-flex;
+	width: 225px;
+	height: 420px;
+	background-color: white;
+
+
+}
+/*articles and post*/
+.New-Post ,.News-tiles,.News-tiles-2{
+	display:block;
+	width: 600px;
+	height: 700px;
+	margin: 20px 20px;
+	background-color: #fff;
+	border:1px solid grey;
+}
+.New-Post{height: 150px;}
+
+
+.News-tiles-2{
+	height: 250px;
+	position: absolute;
+	top: 1100px;
+
+}
+/*new post textarea*/
+#User-Post{
+width: 500px;
+	height: 30px;
+	margin: 20px 50px;
+	border:none;
+	outline: none;
+	border-bottom:1px solid grey;
+	
+	
+}
+
+.Post-Attachements{
+	
+	width: 450px;
+	height: px;
+	margin: 0 auto;
+
+}
+
+.Post-Attachements-Icons, .Share-Subscribe-div i{
+	margin:10px 25px;
+	font-size: 120%;
+
+}
+.News-tiles{
+	display: block;
+	position: absolute;
+	top:300px;
+}
+/*header for articles*/
+#content-header{
+	width: 550px;
+	height: 80px;
+	border-bottom: 1px solid lightgrey;
+	margin: 10px;
+}
+.Follow-Link{
+	float: right; 
+	font-size: 1rem; 
+	color: blue;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+#content-header-Logo{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin: 10px;
+	float: left;
+}
+.content-Info{
+	margin: 10px;
+	font-size: 15px;
+}
+.content-img{
+	margin: 20px;
+	max-width: 550px;
+}
+.Like-post-logo{
+	margin: 20px;
+	border-bottom-width: 550px;
+	border-bottom: 1px solid lightgrey; 
+}
+.Like-post-logo i{
+	margin-right: 3px;
+	
+}
+/*actions for post*/
+.Share-Comment-div{
+	border-top:1px solid lightgrey;
+	border-top-width: 200px
+	width: 600px;
+	height: 50px;
+	padding: 10px;
+}
+.Share-Comment-div i{
+	margin-right: 20px;
+}
+
+/*media queries*/
+
+@media (max-width: 1250px)
+{
+	nav{
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+		z-index: 233;
+	
+	}
+	.icon{
+		
+	font-size: 95%;
+	}
+
+	.nav-link-container{
+		/*border:2px solid yellow;*/
+		position: relative;
+		right: 65px;
+	}
+	
+		#search-input{
+	position: relative;
+	bottom: 25px;
+	width: 15vw;
+	height: 30px;
+	outline: none;
+	border:none;
+	border-radius: 2px;
+	}
+	.Logo{
+		position: relative;
+		right: 50px;
+	}
+	.News{
+		display: none;
+	}
+	.content-container{
+		display: flex;
+		width: 1000px;
+	}
+
+}
+
+
+
+@media  (max-width: 1000px)
+{
+	nav{
+		max-width: 100%;
+		min-height: 7vh;
+		position:fixed;
+		bottom: 0px;
+	}
+	.content-container{
+	display: flex;
+	width:100%;
+	height: 1500px;
+	margin: auto;
+	padding-left: 50px;
+
+
+}
+	.profile-img{border-right: none;}
+#content-header{
+	width: 400px;
+}
+
+	#search-input{
+		display: flex;
+		border-radius: 2px;
+		width: 400px;
+		position: relative;
+		left: 15px;
+
+	}
+	.News-tiles-2,.News-tiles, .New-Post  {
+
+		width: 500px;
+	}
+	#User-Post, .content-img{
+		width: 400px;
+	}
+	.nav-links{
+	margin:0 auto;
+		
+	}
+	
+	.hidden{
+
+		display: flex;
+		width: 100%;
+		height: 50px;
+		background-color: #283E4A;
+		position:fixed;
+		top: 0;
+	}
+	.form{
+		margin-top: 15px;
+}
+#User-img{
+	width: 35px;
+	height: 35px;
+	position: relative;
+	right: 50px;
+	top: 10px;
+	border-radius: 50%;
+}
+	
+	#LinkedInLogo ,.extra,.User-profile-img p ,	.Logo,.User-profile-img, .User-profile{
+		display: none;
+	}
+	.Profile-news{
+		padding-top: 50px;
+	}
+	.nav-link-container{
+		position: relative;
+		right: 20px;
+		margin:5px  10px ;
+	/*	border:2px solid green;*/
+		width: 60px;
+	}
+	.work{
+		margin-left:-10px; 
+	}
+	.icon{
+		
+		font-size: 110%;
+	}
+	.Follow-Link{
+		position: relative;
+		bottom: 25px;
+		right: 70px;
+	}
+
+
+}
+
+@media only screen and (max-width: 620px){
+
+	nav{
+		width: 100%;
+		min-height: 7vh;
+		position: fixed;
+		bottom: 0;
+	}
+	.News-tiles{height: 700px;}
+	
+	.News-tiles-2,.News-tiles, .New-Post  {
+
+		width:400px;
+	}
+	.Follow-Link{
+		position: absolute;
+		top: 30px;
+	}
+	.content-img{width: 380px}
+	#search-input{
+		display: flex;
+		border-radius: 2px;
+		max-width: 350px;
+		position: relative;
+		left: 15px;
+
+	}
+	.nav-link-container{
+		
+		width: 50px;
+		margin:10px;
+		padding: 0px;
+	}
+	.icon{
+		font-size: 100%;
+	}
+
+	.hidden{
+
+		display: flex;
+		width: 100%;
+		height: 50px;
+		background-color: #283E4A;
+		position:fixed;
+		top: 0;
+	}
+	.content-container{
+	
+		width:100%;
+		margin-left: 0;
+		
+	}
+	#User-Post{
+		width:300px;
+	}
+	.Profile-news{
+		width: 580px;
+		height: auto;
+	}
+	.User-profile , .News,.nav-link-container p {display: none;}
+
+	
+	#content-header{
+		width: 380px;
+	}
+
+}
+
